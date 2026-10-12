@@ -8,6 +8,7 @@
     "probe:bars": "node probe-price-graph-navigation.js",
     "probe:matrix": "node probe-price-graph-matrix.js",
     "ui": "node probe-ui.js",
+    "probe:manual": "node probe-manual-navigation.js",
     "xlsx:scanner": "node build-price-scanner-xlsx.mjs",
     "probe:load": "node probe-load-only.js",
     "probe:cookie-reject": "node probe-cookie-reject.js"
