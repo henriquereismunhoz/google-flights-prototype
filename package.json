@@ -7,6 +7,7 @@
     "probe:navigation": "node probe-price-graph-navigation.js",
     "probe:bars": "node probe-price-graph-navigation.js",
     "probe:matrix": "node probe-price-graph-matrix.js",
+    "probe:matrix-diagnostic": "node probe-price-graph-matrix.js",
     "ui": "node probe-ui.js",
     "probe:manual": "node probe-manual-navigation.js",
     "xlsx:scanner": "node build-price-scanner-xlsx.mjs",
