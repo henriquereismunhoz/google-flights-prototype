@@ -207,7 +207,7 @@ async function hoverGraphTargets(page) {
   }
   log(`[STEP] Price Graph hover completed inside g.SFDJge: ${count} bars`);
 }
-async function runScan(URL, targetStart, targetEnd, duration, shared = null) {
+async function runScan(URL, targetStart, targetEnd, duration, shared = null, options = {}) {
   log('Starting Chromium navigation test');
   const ownsBrowser = !shared;
   const headless = !/^(false|0|no)$/i.test(String(process.env.HEADLESS ?? 'true').trim());
@@ -228,7 +228,11 @@ async function runScan(URL, targetStart, targetEnd, duration, shared = null) {
       log(`GetCalendarGraph response body unavailable: ${error.message}`);
     }
   });
-  await page.goto(URL, { waitUntil: 'domcontentloaded', timeout: 90000 });
+  if (!options.skipNavigation) {
+    await page.goto(URL, { waitUntil: 'domcontentloaded', timeout: 90000 });
+  } else {
+    log('Manual navigation mode: keeping the page opened by the user');
+  }
   if (page.url().includes('consent.google.com')) {
     const reject = page.locator('button, [role="button"], input[type="submit"], input[type="button"]')
       .filter({ hasText: /reject all|recusar todos|recusar tudo|rejeitar tudo|decline all/i })
@@ -415,6 +419,17 @@ async function main() {
   const context = await browser.newContext({ locale: 'pt-PT', extraHTTPHeaders: { 'Accept-Language': 'pt-PT,pt;q=0.9,en;q=0.8' } });
   const page = await context.newPage();
   const shared = { browser, context, page };
+  let manualReady = false;
+  if (/^(true|1|yes)$/i.test(String(process.env.MANUAL_NAVIGATION ?? 'false'))) {
+    await page.goto('about:blank');
+    const flag = path.join(OUT, 'manual-continue.flag');
+    try { fs.unlinkSync(flag); } catch {}
+    log('MANUAL: Chromium opened on about:blank; navigate manually and resolve any Google verification if shown');
+    log('MANUAL: after the results and Price Graph are ready, create artifacts/manual-continue.flag');
+    while (!fs.existsSync(flag)) await new Promise(resolve => setTimeout(resolve, 500));
+    manualReady = true;
+    log(`MANUAL: continuation received; current URL=${page.url()}`);
+  }
   for (const duration of DURATIONS) {
     let workingStart = requestedStart; let result = null; let attempts = 0; let shiftDays = 0;
     while (!result && shiftDays <= 10) {
@@ -425,7 +440,8 @@ async function main() {
         attempts++;
         log(`Duration ${duration}: attempt=${attempts} start=${workingStart} return=${workingReturn} shift=${shiftDays}`);
         try {
-          result = await runScan(url, workingStart, targetEnd, duration, shared);
+          result = await runScan(url, workingStart, targetEnd, duration, shared, { skipNavigation: manualReady });
+          manualReady = false;
         } catch (error) {
           log(`Duration ${duration}: attempt failed: ${error.message}`);
           if (shared.page.isClosed()) {
