@@ -44,8 +44,20 @@ async function main() {
   } else { await page.goto(URL, { waitUntil: 'domcontentloaded', timeout: 90000 }); await rejectConsent(page); }
   if (page.url().includes('consent.google.com')) await rejectConsent(page);
   await page.waitForTimeout(2000);
-  const calendar = page.getByText('Calendário', { exact: true }).first();
-  if (!await calendar.count()) throw new Error('Calendário button not found');
+  let calendar = page.locator('span[jsname="V67aGc"]:visible').first();
+  if (!await calendar.count()) calendar = page.getByText(/^(Calendário|Calendar)$/i).first();
+  if (!await calendar.count()) {
+    log('Calendário control not found immediately; waiting up to 30 seconds');
+    await page.waitForTimeout(30000);
+    calendar = page.locator('span[jsname="V67aGc"]:visible').first();
+    if (!await calendar.count()) calendar = page.getByText(/^(Calendário|Calendar)$/i).first();
+  }
+  if (!await calendar.count()) {
+    const visibleText = (await page.locator('body').innerText().catch(() => '')).slice(0, 2000);
+    log(`visible page text before failure: ${visibleText}`);
+    throw new Error('Calendário button not found');
+  }
+  await calendar.scrollIntoViewIfNeeded();
   await calendar.click(); log('Calendário opened first time'); await page.waitForTimeout(1000); await page.keyboard.press('Escape'); await page.waitForTimeout(1000); log('Calendário closed after warm-up'); await calendar.click(); log('Calendário opened second time'); await page.waitForTimeout(3000);
   const canvas = page.locator('canvas.Nk9ZY[role="grid"]');
   const canvasInfo = await canvas.count() ? await canvas.first().evaluate(el => ({ width: el.width, height: el.height, cssWidth: el.clientWidth, cssHeight: el.clientHeight, role: el.getAttribute('role'), ariaLabel: el.getAttribute('aria-label') })) : null;
