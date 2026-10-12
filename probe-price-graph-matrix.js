@@ -29,10 +29,15 @@ async function main() {
   const context = await browser.newContext({ locale: 'pt-PT', extraHTTPHeaders: { 'Accept-Language': 'pt-PT,pt;q=0.9,en;q=0.8' } });
   const page = await context.newPage();
   const responses = [];
+  const pendingBodies = new Set();
   page.on('response', async response => {
     if (!response.url().includes('FlightsFrontendService/GetCalendarGrid')) return;
-    try { const raw = await response.body(); const summary = summarizeRaw(raw); const index = responses.length; fs.writeFileSync(path.join(OUT, `get-calendar-grid-${index}.bin`), raw); responses.push({ index, capturedAt: new Date().toISOString(), url: response.url(), status: response.status(), ...summary }); log(`GetCalendarGrid captured index=${index} status=${response.status()} bytes=${raw.length} dates=${summary.dateLikeValues.length}`); }
-    catch (error) { log(`GetCalendarGrid body unavailable: ${error.message}`); }
+    const task = (async () => {
+      try { const raw = await response.body(); const summary = summarizeRaw(raw); const index = responses.length; fs.writeFileSync(path.join(OUT, `get-calendar-grid-${index}.bin`), raw); responses.push({ index, capturedAt: new Date().toISOString(), url: response.url(), status: response.status(), ...summary }); log(`GetCalendarGrid captured index=${index} status=${response.status()} bytes=${raw.length} dates=${summary.dateLikeValues.length}`); }
+      catch (error) { log(`GetCalendarGrid body unavailable: ${error.message}`); }
+    })();
+    pendingBodies.add(task);
+    task.finally(() => pendingBodies.delete(task));
   });
   if (manual) {
     try { fs.unlinkSync(FLAG); } catch {}
@@ -60,6 +65,8 @@ async function main() {
   const canvas = page.locator('canvas.Nk9ZY[role="grid"]');
   const canvasInfo = await canvas.count() ? await canvas.first().evaluate(el => ({ width: el.width, height: el.height, cssWidth: el.clientWidth, cssHeight: el.clientHeight, role: el.getAttribute('role'), ariaLabel: el.getAttribute('aria-label') })) : null;
   const buttons = await page.locator('button:visible').evaluateAll(btns => btns.map(b => ({ ariaLabel: b.getAttribute('aria-label'), text: (b.innerText || '').trim() })).filter(x => x.ariaLabel && /Rolar para|Scroll/i.test(x.ariaLabel)));
+  await page.waitForTimeout(1000);
+  while (pendingBodies.size) await Promise.all([...pendingBodies]);
   const result = { capturedAt: new Date().toISOString(), url: page.url(), title: await page.title(), canvas: canvasInfo, navigationButtons: buttons, responseCount: responses.length, responses };
   fs.writeFileSync(path.join(OUT, 'matrix-diagnostic.json'), JSON.stringify(result, null, 2)); fs.writeFileSync(path.join(OUT, 'matrix-diagnostic.html'), await page.content(), 'utf8'); await page.screenshot({ path: path.join(OUT, 'matrix-diagnostic.png'), fullPage: false }); log(`diagnostic complete: canvas=${Boolean(canvasInfo)} responses=${responses.length}`); log(`artefacts saved in ${OUT}`); await browser.close();
 }
