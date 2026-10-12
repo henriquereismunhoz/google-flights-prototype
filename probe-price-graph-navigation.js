@@ -459,4 +459,12 @@ async function main() {
   log('Chromium closed');
   log('PRICE SCANNER 80-90 COMPLETE');
 }
-main().catch(e => { console.error(`[${new Date().toISOString()}] TEST FAILED: ${e.stack || e.message}`); process.exitCode = 1; });
+const configuredMatrix = (() => {
+  if (!/^(true|1|yes)$/i.test(String(process.env.MANUAL_NAVIGATION || 'false'))) return false;
+  try { return JSON.parse(fs.readFileSync(path.join(OUT, 'scanner-config.json'), 'utf8')).strategy === 'matrix'; } catch { return false; }
+})();
+if (configuredMatrix) {
+  require('./probe-price-graph-matrix.js');
+} else {
+  main().catch(e => { console.error(`[${new Date().toISOString()}] TEST FAILED: ${e.stack || e.message}`); process.exitCode = 1; });
+}
