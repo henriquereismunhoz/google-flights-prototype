@@ -1,0 +1,20 @@
+{
+  "name": "google-flights-price-graph-probe",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "probe": "node probe-price-graph.js",
+    "probe:navigation": "node probe-price-graph-navigation.js",
+    "probe:bars": "node probe-price-graph-navigation.js",
+    "probe:matrix": "node probe-price-graph-matrix.js",
+    "ui": "node probe-ui.js",
+    "xlsx:scanner": "node build-price-scanner-xlsx.mjs",
+    "probe:load": "node probe-load-only.js",
+    "probe:cookie-reject": "node probe-cookie-reject.js"
+    ,"probe:visual-click": "node probe-visual-click.js"
+    ,"probe:price-filter-runs": "node probe-price-filter-runs.js"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0"
+  }
+}

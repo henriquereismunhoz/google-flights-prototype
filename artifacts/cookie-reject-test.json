@@ -1,0 +1,30 @@
+{
+  "isolatedContext": true,
+  "storageStateUsed": false,
+  "persistentProfileUsed": false,
+  "urlRequested": "https://www.google.com/travel/flights/search?tfs=CBwQAho2EgoyMDI3LTAyLTIwKAFqBwgBEgNDTkZqBwgBEgNHSUdyBwgBEgNMSVNyBwgBEgNPUE-QAawCGjYSCjIwMjctMDUtMTQoAWoHCAESA0xJU2oHCAESA09QT3IHCAESA0NORnIHCAESA0dJR5ABrAJAAUgBcAGCAQsI____________AZgBAQ&tfu=EgYIABAAGAA",
+  "finalUrl": "https://www.google.com/travel/flights/search?tfs=CBwQAho2EgoyMDI3LTAyLTIwKAFqBwgBEgNDTkZqBwgBEgNHSUdyBwgBEgNMSVNyBwgBEgNPUE-QAawCGjYSCjIwMjctMDUtMTQoAWoHCAESA0xJU2oHCAESA09QT3IHCAESA0NORnIHCAESA0dJR5ABrAJAAUgBcAGCAQsI____________AZgBAQ&tfu=EgYIABAAGAA",
+  "title": "Belo Horizonte and 1 more to Lisbon and 1 more | Google Flights",
+  "startedAt": "2026-10-07T09:44:33.092Z",
+  "consentAction": "reject_all",
+  "resultsVisible": true,
+  "resultsVisibleAt": "2026-10-07T09:44:34.944Z",
+  "priceGraphVisible": true,
+  "priceGraphVisibleAt": "2026-10-07T09:44:35.354Z",
+  "priceFilterVisible": false,
+  "priceFilterText": null,
+  "oopsDetected": false,
+  "oopsSeenAt": null,
+  "totalMs": 2303,
+  "relevantVisibleText": [
+    "Price",
+    "Best",
+    "Cheapest",
+    "Track prices",
+    "Track prices from Belo Horizonte or Rio de Janeiro to Lisbon or Porto departing 2027-02-20 and returning 2027-05-14",
+    "Price graph",
+    "Departing flights",
+    "Prices include required taxes + fees for 1 adult. Optional charges and bag fees may apply. Passenger assistance info.",
+    "Prices are final prices and include all taxes and fees, including payment fees for the cheapest common payment method (which may differ depending on the provider). Additional charges may apply for other types of payment, luggage, meals, WLAN or other additional services. Prices, availability and travel details are provided based on the latest information received from our partners. This information is reflected in the results within a period of less than 24 hours. Additional conditions may also be applied by our partners. You should then check prices and conditions with the services providers before booking."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "run": 1,
+  "urlRequested": "https://www.google.com/travel/flights/search?tfs=CBwQAho2EgoyMDI3LTAyLTIwKAFqBwgBEgNDTkZqBwgBEgNHSUdyBwgBEgNMSVNyBwgBEgNPUE-QAawCGjYSCjIwMjctMDUtMTQoAWoHCAESA0xJU2oHCAESA09QT3IHCAESA0NORnIHCAESA0dJR5ABrAJAAUgBcAGCAQsI____________AZgBAQ&tfu=EgYIABAAGAA",
+  "finalUrl": "https://www.google.com/travel/flights/search?tfs=CBwQAho2EgoyMDI3LTAyLTIwKAFqBwgBEgNDTkZqBwgBEgNHSUdyBwgBEgNMSVNyBwgBEgNPUE-QAawCGjYSCjIwMjctMDUtMTQoAWoHCAESA0xJU2oHCAESA09QT3IHCAESA0NORnIHCAESA0dJR5ABrAJAAUgBcAGCAQsI____________AZgBAQ&tfu=EgYIABAAGAA",
+  "title": "Belo Horizonte and 1 more to Lisbon and 1 more | Google Flights",
+  "startedAt": "2026-10-07T10:40:43.504Z",
+  "cookiesRejected": true,
+  "checkpoints": {
+    "0s": {
+      "elapsedMs": 2205,
+      "bodyHasUpTo900": false,
+      "activeFilterElementCount": 0,
+      "activeFilterVisible": false,
+      "priceFilterActive": false,
+      "allFilters": "All filters (2)",
+      "priceGraphVisible": true,
+      "resultsVisible": true
+    },
+    "1s": {
+      "elapsedMs": 2374,
+      "bodyHasUpTo900": false,
+      "activeFilterElementCount": 0,
+      "activeFilterVisible": false,
+      "priceFilterActive": false,
+      "allFilters": "All filters (2)",
+      "priceGraphVisible": true,
+      "resultsVisible": true
+    },
+    "2s": {
+      "elapsedMs": 2501,
+      "bodyHasUpTo900": false,
+      "activeFilterElementCount": 0,
+      "activeFilterVisible": false,
+      "priceFilterActive": false,
+      "allFilters": "All filters (2)",
+      "priceGraphVisible": true,
+      "resultsVisible": true
+    },
+    "5s": {
+      "elapsedMs": 5004,
+      "bodyHasUpTo900": false,
+      "activeFilterElementCount": 0,
+      "activeFilterVisible": false,
+      "priceFilterActive": false,
+      "allFilters": "All filters (2)",
+      "priceGraphVisible": true,
+      "resultsVisible": true
+    }
+  },
+  "clickCount": 0,
+  "requestsModified": false
+}

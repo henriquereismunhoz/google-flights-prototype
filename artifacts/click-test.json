@@ -1,0 +1,36 @@
+{
+  "url": "https://www.google.com/travel/flights/search?tfs=CBwQAho2EgoyMDI3LTAyLTIwKAFqBwgBEgNDTkZqBwgBEgNHSUdyBwgBEgNMSVNyBwgBEgNPUE-QAawCGjYSCjIwMjctMDUtMTQoAWoHCAESA0xJU2oHCAESA09QT3IHCAESA0NORnIHCAESA0dJR5ABrAJAAUgBYIQHcAGCAQsI____________AZgBAQ&tfu=EgYIABAAGAA",
+  "finalUrl": "https://www.google.com/travel/flights/search?tfs=CBwQAho2EgoyMDI3LTAyLTIwKAFqBwgBEgNDTkZqBwgBEgNHSUdyBwgBEgNMSVNyBwgBEgNPUE-QAawCGjYSCjIwMjctMDUtMTQoAWoHCAESA0xJU2oHCAESA09QT3IHCAESA0NORnIHCAESA0dJR5ABrAJAAUgBYIQHcAGCAQsI____________AZgBAQ&tfu=EgYIABAAGAA",
+  "title": "Belo Horizonte and 1 more to Lisbon and 1 more | Google Flights",
+  "cookiesRejected": true,
+  "priceFilterPresent": true,
+  "priceFilterAbsent": false,
+  "resultsVisible": true,
+  "priceGraphInitialVisible": true,
+  "arrowFound": false,
+  "arrowLabel": null,
+  "arrowVisible": false,
+  "arrowEnabled": false,
+  "clickExecuted": false,
+  "clickCount": 0,
+  "window0FirstDate": "2027-02-20",
+  "window0LastDate": "2027-05-14",
+  "window1FirstDate": "2027-02-20",
+  "window1LastDate": "2027-05-14",
+  "beforeDates": [
+    "2027-02-20",
+    "2027-05-14"
+  ],
+  "afterDates": [
+    "2027-02-20",
+    "2027-05-14"
+  ],
+  "visualChanged": false,
+  "visualChangedAt": null,
+  "graphStillVisible": true,
+  "stableAt": null,
+  "oopsDetected": false,
+  "oopsSeenAt": null,
+  "getCalendarGraphResponses": [],
+  "totalMs": 2974
+}

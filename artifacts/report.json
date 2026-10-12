@@ -1,0 +1,24 @@
+{
+  "testedAt": "2026-10-07T10:46:27.818Z",
+  "url": "https://www.google.com/travel/flights/search?tfs=CBwQAho2EgoyMDI3LTAyLTIwKAFqBwgBEgNDTkZqBwgBEgNHSUdyBwgBEgNMSVNyBwgBEgNPUE-QAawCGjYSCjIwMjctMDUtMTQoAWoHCAESA0xJU2oHCAESA09QT3IHCAESA0NORnIHCAESA0dJR5ABrAJAAUgBcAGCAQsI____________AZgBAQ&tfu=EgYIABAAGAA",
+  "pageTitle": "Belo Horizonte and 1 more to Lisbon and 1 more | Google Flights",
+  "finalUrl": "https://www.google.com/travel/flights/search?tfs=CBwQAho2EgoyMDI3LTAyLTIwKAFqBwgBEgNDTkZqBwgBEgNHSUdyBwgBEgNMSVNyBwgBEgNPUE-QAawCGjYSCjIwMjctMDUtMTQoAWoHCAESA0xJU2oHCAESA09QT3IHCAESA0NORnIHCAESA0dJR5ABrAJAAUgBcAGCAQsI____________AZgBAQ&tfu=EgYIABAAGAA",
+  "graphRequestsObserved": [
+    {
+      "method": "POST",
+      "url": "https://www.google.com/_/FlightsFrontendUi/data/travel.frontend.flights.FlightsFrontendService/GetCalendarGraph?f.sid=1994397135940254047&bl=boq_travel-frontend-flights-ui_20261006.00_p0&hl=en-US&soc-app=162&soc-platform=1&soc-device=1&_reqid=142377&rt=c",
+      "postData": "f.req=%5Bnull%2C%22%5Bnull%2C%5Bnull%2Cnull%2C1%2Cnull%2C%5B%5D%2C1%2C%5B1%2C0%2C0%2C0%5D%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B%5B%5B%5B%5C%22CNF%5C%22%2C0%5D%2C%5B%5C%22GIG%5C%22%2C0%5D%5D%5D%2C%5B%5B%5B%5C%22LIS%5C%22%2C0%5D%2C%5B%5C%22OPO%5C%22%2C0%5D%5D%5D%2Cnull%2C2%2Cnull%2Cnull%2C%5C%222027-02-20%5C%22%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C300%2Cnull%2C3%5D%2C%5B%5B%5B%5B%5C%22LIS%5C%22%2C0%5D%2C%5B%5C%22OPO%5C%22%2C0%5D%5D%5D%2C%5B%5B%5B%5C%22CNF%5C%22%2C0%5D%2C%5B%5C%22GIG%5C%22%2C0%5D%5D%5D%2Cnull%2C2%2Cnull%2Cnull%2C%5C%222027-05-14%5C%22%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C300%2Cnull%2C3%5D%5D%2Cnull%2Cnull%2Cnull%2C1%5D%2C%5B%5C%222027-02-13%5C%22%2C%5C%222027-04-13%5C%22%5D%2Cnull%2C%5B83%2C83%5D%5D%22%5D&"
+    }
+  ],
+  "responsesCaptured": [
+    {
+      "status": 200,
+      "url": "https://www.google.com/_/FlightsFrontendUi/data/travel.frontend.flights.FlightsFrontendService/GetCalendarGraph?f.sid=1994397135940254047&bl=boq_travel-frontend-flights-ui_20261006.00_p0&hl=en-US&soc-app=162&soc-platform=1&soc-device=1&_reqid=142377&rt=c",
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 364,
+      "rawPath": "C:\\Users\\henrique\\projetos\\google-flights-prototype\\artifacts\\01____FlightsFrontendUi_data_travel_frontend_flights_FlightsFrontendService_GetCalendarGraph.bin"
+    }
+  ],
+  "extractedRecords": [],
+  "notes": "Extraction is conservative and does not invent return dates. Inspect raw .bin files and page.html for the actual Google response structure."
+}

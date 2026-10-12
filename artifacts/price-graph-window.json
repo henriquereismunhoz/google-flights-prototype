@@ -1,0 +1,14 @@
+{
+  "window": {
+    "points": 0,
+    "source": "GetCalendarGraph"
+  },
+  "entries": [],
+  "source": {
+    "status": 200,
+    "url": "https://www.google.com/_/FlightsFrontendUi/data/travel.frontend.flights.FlightsFrontendService/GetCalendarGraph?f.sid=1994397135940254047&bl=boq_travel-frontend-flights-ui_20261006.00_p0&hl=en-US&soc-app=162&soc-platform=1&soc-device=1&_reqid=142377&rt=c",
+    "contentType": "application/json; charset=utf-8",
+    "bytes": 364,
+    "rawPath": "C:\\Users\\henrique\\projetos\\google-flights-prototype\\artifacts\\01____FlightsFrontendUi_data_travel_frontend_flights_FlightsFrontendService_GetCalendarGraph.bin"
+  }
+}

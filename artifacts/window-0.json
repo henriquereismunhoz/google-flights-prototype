@@ -1,0 +1,308 @@
+{
+  "window": 0,
+  "capturedAt": "2026-10-09T16:13:09.668Z",
+  "requestUrl": "https://www.google.com/_/FlightsFrontendUi/data/travel.frontend.flights.FlightsFrontendService/GetCalendarGraph?f.sid=-7456070503724583224&bl=boq_travel-frontend-flights-ui_20261007.02_p0&hl=pt-PT&soc-app=162&soc-platform=1&soc-device=1&_reqid=961925&rt=c",
+  "responseBytes": 3548,
+  "records": [
+    {
+      "departure_date": "2027-02-01",
+      "return_date": "2027-04-23",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-02",
+      "return_date": "2027-04-24",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-03",
+      "return_date": "2027-04-25",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-04",
+      "return_date": "2027-04-26",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-05",
+      "return_date": "2027-04-27",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-06",
+      "return_date": "2027-04-28",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-07",
+      "return_date": "2027-04-29",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-08",
+      "return_date": "2027-04-30",
+      "price": 693
+    },
+    {
+      "departure_date": "2027-02-09",
+      "return_date": "2027-05-01",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-10",
+      "return_date": "2027-05-02",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-11",
+      "return_date": "2027-05-03",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-12",
+      "return_date": "2027-05-04",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-13",
+      "return_date": "2027-05-05",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-14",
+      "return_date": "2027-05-06",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-15",
+      "return_date": "2027-05-07",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-16",
+      "return_date": "2027-05-08",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-17",
+      "return_date": "2027-05-09",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-18",
+      "return_date": "2027-05-10",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-19",
+      "return_date": "2027-05-11",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-20",
+      "return_date": "2027-05-12",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-21",
+      "return_date": "2027-05-13",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-22",
+      "return_date": "2027-05-14",
+      "price": 714
+    },
+    {
+      "departure_date": "2027-02-23",
+      "return_date": "2027-05-15",
+      "price": 714
+    },
+    {
+      "departure_date": "2027-02-24",
+      "return_date": "2027-05-16",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-25",
+      "return_date": "2027-05-17",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-26",
+      "return_date": "2027-05-18",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-27",
+      "return_date": "2027-05-19",
+      "price": null
+    },
+    {
+      "departure_date": "2027-02-28",
+      "return_date": "2027-05-20",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-01",
+      "return_date": "2027-05-21",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-02",
+      "return_date": "2027-05-22",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-03",
+      "return_date": "2027-05-23",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-04",
+      "return_date": "2027-05-24",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-05",
+      "return_date": "2027-05-25",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-06",
+      "return_date": "2027-05-26",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-07",
+      "return_date": "2027-05-27",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-08",
+      "return_date": "2027-05-28",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-09",
+      "return_date": "2027-05-29",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-10",
+      "return_date": "2027-05-30",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-11",
+      "return_date": "2027-05-31",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-12",
+      "return_date": "2027-06-01",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-13",
+      "return_date": "2027-06-02",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-14",
+      "return_date": "2027-06-03",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-15",
+      "return_date": "2027-06-04",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-16",
+      "return_date": "2027-06-05",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-17",
+      "return_date": "2027-06-06",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-18",
+      "return_date": "2027-06-07",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-19",
+      "return_date": "2027-06-08",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-20",
+      "return_date": "2027-06-09",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-21",
+      "return_date": "2027-06-10",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-22",
+      "return_date": "2027-06-11",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-23",
+      "return_date": "2027-06-12",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-24",
+      "return_date": "2027-06-13",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-25",
+      "return_date": "2027-06-14",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-26",
+      "return_date": "2027-06-15",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-27",
+      "return_date": "2027-06-16",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-28",
+      "return_date": "2027-06-17",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-29",
+      "return_date": "2027-06-18",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-30",
+      "return_date": "2027-06-19",
+      "price": null
+    },
+    {
+      "departure_date": "2027-03-31",
+      "return_date": "2027-06-20",
+      "price": null
+    },
+    {
+      "departure_date": "2027-04-01",
+      "return_date": "2027-06-21",
+      "price": null
+    }
+  ]
+}
