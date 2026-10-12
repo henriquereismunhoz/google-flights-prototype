@@ -44,13 +44,13 @@ async function main() {
   } else { await page.goto(URL, { waitUntil: 'domcontentloaded', timeout: 90000 }); await rejectConsent(page); }
   if (page.url().includes('consent.google.com')) await rejectConsent(page);
   await page.waitForTimeout(2000);
-  let calendar = page.locator('span[jsname="V67aGc"]:visible').first();
-  if (!await calendar.count()) calendar = page.getByText(/^(Calendário|Calendar)$/i).first();
+  let calendar = page.locator('button:visible').filter({ hasText: /^(Calendário|Grelha de data|Calendar|Date grid)$/i }).first();
+  if (!await calendar.count()) calendar = page.getByText(/^(Calendário|Grelha de data|Calendar|Date grid)$/i).locator('..').first();
   if (!await calendar.count()) {
     log('Calendário control not found immediately; waiting up to 30 seconds');
     await page.waitForTimeout(30000);
-    calendar = page.locator('span[jsname="V67aGc"]:visible').first();
-    if (!await calendar.count()) calendar = page.getByText(/^(Calendário|Calendar)$/i).first();
+    calendar = page.locator('button:visible').filter({ hasText: /^(Calendário|Grelha de data|Calendar|Date grid)$/i }).first();
+    if (!await calendar.count()) calendar = page.getByText(/^(Calendário|Grelha de data|Calendar|Date grid)$/i).locator('..').first();
   }
   if (!await calendar.count()) {
     const visibleText = (await page.locator('body').innerText().catch(() => '')).slice(0, 2000);
