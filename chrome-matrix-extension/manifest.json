@@ -11,7 +11,7 @@
     "run_at": "document_start"
   }],
   "web_accessible_resources": [{
-    "resources": ["page-hook.js"],
+    "resources": ["page-hook.js", "template.xlsx"],
     "matches": ["https://www.google.com/*"]
   }]
 }
