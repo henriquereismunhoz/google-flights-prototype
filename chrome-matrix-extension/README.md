@@ -17,6 +17,16 @@ Trata-se de uma extensão para Chrome que regista os preços e a disponibilidade
 
 O painel **Matrix capture** aparecerá no canto inferior direito da página.
 
+### Exemplos visuais
+
+![Google Flights antes da captura](../docs/images/1%20Google%20Flights%20antes%20da%20captura.png)
+
+![Calendário do Google Flights](../docs/images/2%20Calend%C3%A1rio%20do%20Google%20Flights.png)
+
+![Painel da extensão](../docs/images/3%20Painel%20da%20extens%C3%A3o.png)
+
+![Botões e explicação da extensão](../docs/images/4%20Painel%20da%20extens%C3%A3o%20Botoes%20e%20Explicacao.png)
+
 ### Utilização
 
 Inicie a sua pesquisa habitualmente com todos os dados necessários (Origem, Destino, Data de Ida, Data de Volta e Filtros desejados). Nos resultados da pesquisa (Voos de Ida), abra "Calendário" (a matriz de preços do Google Flights) e navegue normalmente pelas datas desejadas. A extensão acumula automaticamente todas as respostas visíveis  durante a nagegação.
@@ -89,6 +99,14 @@ Na versão atual, apenas a aba **Evolução** recebe dados diretamente. A extens
 
 As restantes abas não são recriadas nem substituídas. A aba **Matriz atual** é calculada pelas fórmulas do próprio Excel a partir de **Evolução**. As abas de visualização, gráficos e apoio permanecem parte do template.
 
+### Exemplos do Excel gerado
+
+![Capa do Excel](../docs/images/5%20Excel%20-%20Capa.png)
+
+![Matriz atual no Excel](../docs/images/6%20Excel%20-%20Matriz%20atual.png)
+
+![Gráfico do Excel](../docs/images/7%20Excel%20-%20Gr%C3%A1fico.png)
+
 O projeto não cria `Matriz_template`, `Evolução_template`, `sheet5.xml` ou `sheet6.xml` adicionais. As partes que já existem no template são preservadas.
 
 ### Recálculo do Excel
@@ -104,6 +122,8 @@ Quando o JSON contém várias capturas, cada captura ocupa uma nova coluna em **
 ### Desenvolvimento
 
 O código-fonte da extensão está nesta pasta. Para testar alterações, atualize os ficheiros, abra `chrome://extensions`, clique em **Recarregar**, atualize a página do Google Flights e valide os JSON/XLSX gerados.
+
+![Extensão carregada no modo programador](../docs/images/8%20Extens%C3%A3o%20Carregada%20em%20Modo%20Programador.png)
 
 Antes de distribuir uma nova versão, confirme que o Excel abre sem reparação, que as fórmulas são recalculadas e que as abas, estilos e gráficos do template permanecem intactos.
 

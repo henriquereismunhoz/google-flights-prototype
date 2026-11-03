@@ -15,6 +15,26 @@ Este projeto contém uma extensão para Chrome que regista os preços e a dispon
 
 No Google Flights, preencha a pesquisa, abra **Calendário** nos resultados dos voos de ida e navegue pelas datas desejadas. A extensão acumula automaticamente as respostas visíveis.
 
+## Exemplo visual
+
+### Google Flights e painel da extensão
+
+![Google Flights antes da captura](docs/images/1%20Google%20Flights%20antes%20da%20captura.png)
+
+![Calendário do Google Flights](docs/images/2%20Calend%C3%A1rio%20do%20Google%20Flights.png)
+
+![Painel da extensão](docs/images/3%20Painel%20da%20extens%C3%A3o.png)
+
+![Botões e explicação da extensão](docs/images/4%20Painel%20da%20extens%C3%A3o%20Botoes%20e%20Explicacao.png)
+
+### Excel gerado
+
+![Capa do Excel](docs/images/5%20Excel%20-%20Capa.png)
+
+![Matriz atual no Excel](docs/images/6%20Excel%20-%20Matriz%20atual.png)
+
+![Gráfico do Excel](docs/images/7%20Excel%20-%20Gr%C3%A1fico.png)
+
 ### Botões
 
 - **Parar:** interrompe a captura de novas respostas.
@@ -35,6 +55,10 @@ No Google Flights, preencha a pesquisa, abra **Calendário** nos resultados dos 
 As duas opções de Excel utilizam o mesmo gerador; apenas a origem dos dados é diferente. O template é preservado como estrutura principal do workbook. A extensão atualiza incrementalmente apenas a aba **Evolução**, mantendo estilos, fórmulas, gráficos, tabelas, desenhos e relações existentes. A aba **Matriz atual** é calculada pelas fórmulas do próprio Excel.
 
 O gerador configura o recálculo automático do Excel, remove a cadeia de cálculo antiga quando necessário e preserva as fórmulas originais. Não cria as abas auxiliares `Matriz_template` ou `Evolução_template`.
+
+### Extensão carregada no Chrome
+
+![Extensão carregada no modo programador](docs/images/8%20Extens%C3%A3o%20Carregada%20em%20Modo%20Programador.png)
 
 ## Segurança
 
